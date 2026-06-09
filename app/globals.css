@@ -76,7 +76,7 @@ html {
 
 
 #custom-cursor.cursor-grow {
-  width: 35px !important; /* বৃত্তের সাইজ */
+  width: 35px !important; 
   height: 35px !important;
   
  
@@ -176,7 +176,7 @@ footer{background-image: url('../public/images/bg-2.png'); background-size: cove
   }
 }
 .hero-txt{font-size: 60px;}
-.herobottom{bottom: 120px;}
+.herobottom{bottom: 60px;}
 @media (max-width: 1600px) {
   .container-custom{width: 1400px; margin: 0 auto;}
   .hero-txt{font-size: 50px;}

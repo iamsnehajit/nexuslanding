@@ -280,7 +280,7 @@ export default function Contact() {
               <Image 
                 src={contact} 
                 alt="Background" 
-                className="h-[70%] w-[90%] rounded-4xl left-0 bottom-0 absolute object-cover"
+                className="h-[85%] w-[90%] rounded-4xl left-0 bottom-0 absolute object-cover"
                 priority
               />
               

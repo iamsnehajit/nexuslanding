@@ -29,22 +29,22 @@ export default function Header() {
       }`}>
       <div className="container-custom flex items-center justify-between">
       <Link href="/">
-        <Image src={logo} alt="image not found" className="w-48"/>
+        <Image src={logo} alt="image not found" className="2xl:w-52 xl:w-48"/>
      </Link>
 
      
-      <nav className="flex items-center gap-6 md:gap-6 font-medium text-xs md:text-sm text-neutral-400 tracking-wide">
+      <nav className="flex items-center gap-7 md:gap-6 font-medium text-xs md:text-sm text-neutral-400 tracking-wide">
         
-        <Link href="/" className="text-black flex text-[18px] transition-colors">
-          <span className="nav-link">Why Us </span> <span className="inline-block pl-5">|</span>  
+        <Link href="/" className="text-black flex text-[18px] font-normal transition-colors">
+          <span className="nav-link">Why Us </span> <span className="inline-block pl-6">|</span>  
         </Link>
-        <Link href="/contact" className="text-black text-[18px] flex transition-colors">
-          <span className="nav-link">Service </span> <span className="inline-block pl-5">|</span> 
+        <Link href="/contact" className="text-black text-[18px] font-normal flex transition-colors">
+          <span className="nav-link">Service </span> <span className="inline-block pl-6">|</span> 
         </Link>
-        <Link href="/contact" className="nav-link text-black text-[18px] transition-colors">
+        <Link href="/contact" className="nav-link text-black font-normal text-[18px] transition-colors">
           Benefits
         </Link>
-        <Link href="/contact" className="text-black hover:bg-[#CCFA82] text-[18px] group  border border-black rounded-3xl transition-colors px-4.5 py-2">
+        <Link href="/contact" className="text-black hover:bg-[#CCFA82] font-normal text-[18px] group  border border-black rounded-3xl transition-colors px-5 py-2">
           Let’s Talk! <Image src={Arrow} alt="image not found" className="w-4 pl-1 inline-block"/>
         </Link> 
       </nav>
