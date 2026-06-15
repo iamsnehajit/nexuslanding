@@ -36,13 +36,13 @@ export default function Header() {
      
       <nav className="md:flex items-center gap-7 md:gap-6 font-medium text-xs md:text-sm text-neutral-400 tracking-wide hidden">
         
-        <Link href="/" className="text-black flex text-[18px] font-normal transition-colors">
+        <Link href="#whyUs" className="text-black flex text-[18px] font-normal transition-colors">
           <span className="nav-link">Why Us </span> <span className="inline-block pl-6">|</span>  
         </Link>
-        <Link href="/contact" className="text-black text-[18px] font-normal flex transition-colors">
+        <Link href="#services" className="text-black text-[18px] font-normal flex transition-colors">
           <span className="nav-link">Service </span> <span className="inline-block pl-6">|</span> 
         </Link>
-        <Link href="/contact" className="nav-link text-black font-normal text-[18px] transition-colors">
+        <Link href="#benefit" className="nav-link text-black font-normal text-[18px] transition-colors">
           Benefits
         </Link>
         <Link href="/contact" className="text-black hover:bg-[#CCFA82] font-normal text-[18px] group  border border-black rounded-3xl transition-colors px-5 py-2">
@@ -89,21 +89,21 @@ export default function Header() {
          
           <nav className="flex flex-col gap-5">
             <Link 
-              href="/" 
+              href="whyUs" 
               onClick={() => setIsOpen(false)}
               className="text-black text-xl font-medium py-2 border-b border-neutral-50 hover:pl-2 transition-all duration-200"
             >
               Why Us
             </Link>
             <Link 
-              href="/contact" 
+              href="#services" 
               onClick={() => setIsOpen(false)}
               className="text-black text-xl font-medium py-2 border-b border-neutral-50 hover:pl-2 transition-all duration-200"
             >
               Service
             </Link>
             <Link 
-              href="/contact" 
+              href="#benefit" 
               onClick={() => setIsOpen(false)}
               className="text-black text-xl font-medium py-2 border-b border-neutral-50 hover:pl-2 transition-all duration-200"
             >

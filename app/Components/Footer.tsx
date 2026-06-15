@@ -78,13 +78,13 @@ export default function FooterNexus() {
                 </div>
           </div>
           
-          <div className="mt-10 md:mt-0 md:w-1/2">
+          <div className="mt-10 md:mt-0 md:w-1/2 w-full">
              <h4 className="text-xl lg:text-3xl font-semibold mb-6">Still have questions?</h4>
-             <div className="flex">
+             <div className="flex flex-col md:flex-row">
                <input 
                  type="email" 
                  placeholder="Enter your e-mail" 
-                 className="bg-white w-3/4 md:w-3/4 rounded-4xl text-black py-1 px-4"
+                 className="bg-white w-full md:w-3/4 rounded-4xl text-black py-2 mb-3 md:mb-0 md:py-1 px-4"
                />
                <CustomButton text="Submit"  href="/contact" variant="lime" />
              </div>

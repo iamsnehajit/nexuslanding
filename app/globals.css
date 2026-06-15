@@ -202,6 +202,52 @@ footer{background-image: url('../public/images/bg-2.png'); background-size: cove
 @media (max-width: 999px) {
     .hero-txt{font-size: 27px;}
      .arrow {right: 15px;}
+     .figma-exact-wave {
+  position: absolute;
+  font-size: 15vw; 
+  font-weight: 900; 
+  line-height: 1;
+  text-transform: uppercase;
+    
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C150,110 350,-40 500,50 C650,130 850,0 1000,50 C1150,90 1300,20 1400,50 L1400,120 L0,120 Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C150,110 350,-40 500,50 C650,130 850,0 1000,50 C1150,90 1300,20 1400,50 L1400,120 L0,120 Z' fill='%23000'/%3E%3C/svg%3E");
+  
+  /* 🎯 মাস্ক সাইজ ২00% করা হলো যাতে পারসেন্টেজে হিসাব করা সহজ হয় */
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  
+  animation: lockHorizontalWave 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards, 
+             lockVerticalRise 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* 🎯 পিক্সেল (px) বাদ দিয়ে পারসেন্টেজ (%) দেওয়া হলো, এতে স্ক্রিন ছোট বা বড় যাই হোক, ওয়েভ স্পিড সেম থাকবে */
+@keyframes lockHorizontalWave {
+  0% { 
+    -webkit-mask-position: 0% 100%; 
+    mask-position: 0% 100%; 
+  }
+  100% { 
+    -webkit-mask-position: -100% 100%; 
+    mask-position: -100% 100%; 
+  }
+}
+
+@keyframes lockVerticalRise {
+  0% { 
+    -webkit-clip-path: inset(100% 0% 0% 0%);
+    clip-path: inset(100% 0% 0% 0%); 
+  }
+  15% { 
+    -webkit-clip-path: inset(85% 0% 0% 0%);
+    clip-path: inset(85% 0% 0% 0%); 
+  }
+  100% { 
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+    clip-path: inset(0% 0% 0% 0%); 
+  }
+}
 }
 @media (max-width: 676px) {
     .hero-txt{font-size: 25px;}

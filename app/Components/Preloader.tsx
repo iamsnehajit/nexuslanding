@@ -71,7 +71,7 @@ export default function Preloader() {
         </span>
 
       
-        <div className="absolute bottom-[-25px] right-0 flex items-center gap-1 font-mono text-xl text-white bg-[#151515] px-2">
+        <div className="absolute bottom-[20px] md:bottom-[-25px] right-0 flex items-center gap-1 font-mono text-sm md:text-xl text-white bg-[#151515] px-2">
           <span>loading...</span>
           <span className="w-[35px] text-right">{count}%</span>
         </div>

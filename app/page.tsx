@@ -34,13 +34,13 @@ export default function Home() {
     <section>
       <Hero/>
     </section>
-    <section>
+    <section id="whyUs">
       <WhyChoose/>
     </section>
-    <section>
+    <section id="services">
       <Services/>
     </section>
-    <section className="py-20">
+    <section className="py-20" id="benefit">
       <Scrollv/>
     </section>
     <section>
