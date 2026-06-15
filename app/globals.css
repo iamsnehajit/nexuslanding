@@ -196,5 +196,16 @@ footer{background-image: url('../public/images/bg-2.png'); background-size: cove
   .container-custom{width: 1200px; margin: 0 auto;}
 }
 @media (max-width: 1199px) {
-  .container-custom{width: 100px; margin: 0 15px;}
+  .container-custom{width: 100%; padding: 0 15px; margin: 0;}
+  .hero-txt{font-size: 35px;}
+}
+@media (max-width: 999px) {
+    .hero-txt{font-size: 27px;}
+     .arrow {right: 15px;}
+}
+@media (max-width: 676px) {
+    .hero-txt{font-size: 25px;}
+    .herobottom{bottom: auto; top: 55vh; height: 40%;}
+    .arrow {right: 15px;}
+    .arrow.contact{width: 100%; left: 0; right: 0; margin-left: 0; padding: 0 15px;}
 }

@@ -31,12 +31,13 @@ useEffect(() => {
       if (width >= 1440) return "1300px";
       if (width >= 1366) return "1250px";
       if (width >= 1280) return "1200px";
-      return "calc(100vw - 10px)";
+      
+      return "calc(100vw - 20px)";
     };
 
     const getTargetHeight = () => {
       const width = window.innerWidth;
-      if (width < 1280) return "calc(100vh - 10px)";
+      if (width < 676) return "40vh";
       return "60vh";
     };
 
@@ -117,14 +118,14 @@ useEffect(() => {
       </div>
       <div className="container-custom absolute herobottom z-3 left-1/2 -translate-x-1/2 w-full">
       <div>
-          <h1 className="hero-txt dark font-semibold leading-[1.2] w-2/4">
+          <h1 className="hero-txt dark font-semibold leading-[1.2] md:w-2/4">
             We collect, pack, and deliver your medicines. Easy!
           </h1>
-          <p className="text-[18px] dark font-medium leading-[1.1] w-3/4 pt-5">
+          <p className="text-[18px] dark font-medium leading-[1.1] md:w-2/4 lg:w-3/4 pt-5">
             Pathology test, Medicines & Doctor Consolations - all in one place.
           </p>
           </div>
-          <div className="absolute right-0 z-10 bottom-3" ref={circularTextRef}>
+          <div className="absolute right-3 lg:right-0 z-10 bottom-3" ref={circularTextRef}>
           <CircularText
             text="DOWN SCROLL DOWN SCROLL DOWN SCROLL "
             onHover="speedUp"
@@ -132,10 +133,10 @@ useEffect(() => {
             className="custom-class "
           />
         </div>
-        <div className="arrow bounce" ref={bounceRef}>
+        <div className="arrow bounce bounce2" ref={bounceRef}>
             <Image src={Arrow2} alt="Image not found" className="w-4"/>
         </div>
-        <div className="arrow contact w-[385px] mr-0 ml-auto">
+        <div className="arrow contact w-full md:w-[385px] md:mr-3 lg:mr-0 ml-auto">
             
             <p ref={contactTextRef} className="opacity-0 translate-y-4 dark text-[20px] leading-[1.2] ">
               Quality Health close to home<br/>Caring you every step

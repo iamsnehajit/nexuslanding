@@ -6,6 +6,7 @@ export default function Preloader() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
     const counterObj = { value: 0 };
     
     // const tl = gsap.timeline({
@@ -25,13 +26,14 @@ export default function Preloader() {
       opacity: 0,
       duration: 1.5,
       ease: "power3.inOut",
-      delay: 1.5,
+      delay: 0,
       pointerEvents: "none",
      
       onComplete: () => {
        
         const loader = document.getElementById("preloader-overlay");
         if (loader) loader.style.display = "none";
+        document.body.style.overflow = "unset";
 
         
         window.dispatchEvent(new Event('resize'));

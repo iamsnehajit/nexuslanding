@@ -40,18 +40,18 @@ export default function FooterNexus() {
   const word = "Nexus";
 
   return (
-    <footer className="w-full pt-30 pb-5 rounded-t-[50px] overflow-hidden">
+    <footer className="w-full pt-20 lg:pt-20 xl:pt-30 pb-5 rounded-t-[50px] overflow-hidden">
       <div className="container-custom mx-auto text-[#D7D7D7] overflow-hidden">
         
        
-        <div className="flex flex-col md:flex-row justify-between items-start mb-20">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-10 md:mb-20">
+          <div className="md:w-1/2 w-full">
              <ul className="flex gap-8 text-xl text-white mb-6">
                <li>Why Us <span className="pl-8">|</span></li>
                <li>Service <span className="pl-8">|</span></li>
                <li>Benefits</li>
              </ul>
-             <p className="text-[16px] text-white leading-[1.2] max-w-3/4">
+             <p className="text-[16px] text-white leading-[1.2] md:max-w-3/4">
                Medical services are an essential part of our lives, offering care and treatment for various health conditions.
              </p>
              <div className="flex items-center gap-3 text-white mt-5">
@@ -78,13 +78,13 @@ export default function FooterNexus() {
                 </div>
           </div>
           
-          <div className="mt-10 md:mt-0 w-1/2">
-             <h4 className="text-3xl font-semibold mb-6">Still have questions?</h4>
+          <div className="mt-10 md:mt-0 md:w-1/2">
+             <h4 className="text-xl lg:text-3xl font-semibold mb-6">Still have questions?</h4>
              <div className="flex">
                <input 
                  type="email" 
                  placeholder="Enter your e-mail" 
-                 className="bg-white w-3/4 rounded-4xl text-black py-1 px-4"
+                 className="bg-white md:w-3/4 rounded-4xl text-black py-1 px-4"
                />
                <CustomButton text="Submit"  href="/contact" variant="lime" />
              </div>
@@ -94,7 +94,7 @@ export default function FooterNexus() {
         {/* Nexus Letter Animation Area */}
         <div 
           ref={nexusRef} 
-          className="flex justify-center items-center overflow-hidden h-[150px] lg:h-[200px] xl:h-[215px] 2xl:h-[250px] -mb-3"
+          className="flex justify-center items-center overflow-hidden h-[120px] md:h-[120px] lg:h-[200px] xl:h-[215px] 2xl:h-[250px] -mb-10 md:-mb-3"
         >
           {word.split("").map((char, index) => (
             <span 
@@ -108,12 +108,13 @@ export default function FooterNexus() {
         
       </div>
       <div className="pt-5 border-t border-white">
-        <div className="container-custom flex justify-between">
-            <p className="text-white text-[16px]">© 2025 Nexus. All rights reserved.</p>
-            <div className="flex gap-6">
+        <div className="container-custom md:flex justify-between text-center md:text-left">
+            <p className="text-white text-[16px] hidden md:inline-block">© 2026 Nexus. All rights reserved.</p>
+            <div className="flex gap-6 justify-center md:justify-end">
                 <Link href="" className="text-white text-[16px]">Privacy Policy</Link>
                 <Link href="" className="text-white text-[16px]">Cookies Policy</Link>
             </div>
+            <p className="text-white text-[16px] md:hidden inline-block text-center">© 2026 Nexus. All rights reserved.</p>
         </div>    
       </div>
     </footer>

@@ -12,14 +12,14 @@ const handleAnimationComplete = () => {
 export default function Services() {
   return (
     <div>
-        <div className="relative bg-[#151515] rounded-3xl overflow-hidden py-24">
+        <div className="relative bg-[#151515] rounded-3xl overflow-hidden py-20 xl:py-24">
             <div className="container-custom">
-                <div className="relative mb-10">
+                <div className="relative mb-5 lg:mb-10">
                     <label className="text-xl text-[#CCFA82] relative pl-28"><span className="w-27 h-2 border-t border-[#CCFA82] z-10 absolute left-0 top-1/2"></span>Our Services</label>
                     <div>
                     <SplitText
                     text="What's possible with us"
-                    className="text-white font-semibold text-[60px] leading-[1.2] tracking-[1%]"
+                    className="text-white font-semibold text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] leading-[1.2] tracking-[1%]"
                     delay={50}
                     duration={1.25}
                     ease="power3.out"
@@ -37,20 +37,20 @@ export default function Services() {
                 <div className="group relative py-10 border-b border-[#919090]">
                     <div className="grid grid-cols-12">
                         
-                        <div className="col-span-6 flex">
+                        <div className="md:col-span-6 col-span-12 flex">
                             
                             <Image src={quality} alt="Image not fonnd" className="w-16 pr-6" />
                        
-                            <h3 className="text-white font-medium text-4xl leading-[1.2]">Quality Care<br/>Exceptional Medicines Service</h3>
+                            <h3 className="text-white font-medium text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-[1.2]">Quality Care<br/>Exceptional Medicines Service</h3>
                         </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 md:col-span-6 col-span-12 pl-0 md:pl-3 lg:pl-0 pt-5 md:pt-0">
                             <ul className="list-disc pl-5">
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Your Health, Our Priority</li>
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Harmony Health</li>
                             </ul>
                         </div>
                                                 
-                            <div className="col-span-2 relative cursor-pointer">
+                            <div className="lg:col-span-2 col-span-0 relative cursor-pointer">
                                 
                             
                                 <span className="text-white"></span> 
@@ -62,7 +62,7 @@ export default function Services() {
                                 className="w-48 absolute top-0 left-0 opacity-0 pointer-events-none transition-opacity float duration-300 group-hover:opacity-100" 
                                 />
                             </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 col-span-6 pt-5 lg:pt-0">
                              <CustomButton text="Contact Us"  href="/contact" variant="lime" />
                         </div>
                     </div>
@@ -71,20 +71,20 @@ export default function Services() {
                 <div className="group relative py-10 border-b border-[#919090]">
                     <div className="grid grid-cols-12">
                         
-                        <div className="col-span-6 flex">
+                        <div className="md:col-span-6 col-span-12 flex">
                             
                             <Image src={healing} alt="Image not fonnd" className="w-16 pr-6" />
                        
-                            <h3 className="text-white font-medium text-4xl leading-[1.2]">Healing Lives One<br/> Patient at a Time Consult doctors</h3>
+                            <h3 className="text-white font-medium text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-[1.2]">Healing Lives One<br/> Patient at a Time Consult doctors</h3>
                         </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 md:col-span-6 col-span-12 pl-0 md:pl-3 lg:pl-0 pt-5 md:pt-0">
                             <ul className="list-disc pl-5">
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Your Health, Our Priority</li>
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Harmony Health</li>
                             </ul>
                         </div>
                                                 
-                            <div className="col-span-2 relative cursor-pointer">
+                            <div className="lg:col-span-2 col-span-0 relative cursor-pointer">
                                 
                             
                                 <span className="text-white"></span> 
@@ -96,7 +96,7 @@ export default function Services() {
                                 className="w-48 absolute top-0 left-0 opacity-0 pointer-events-none transition-opacity float duration-300 group-hover:opacity-100" 
                                 />
                             </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 col-span-6 pt-5 lg:pt-0">
                              <CustomButton text="Contact Us"  href="/contact" variant="lime" className="pointer-events-auto"/>
                         </div>
                     </div>
@@ -105,20 +105,20 @@ export default function Services() {
                 <div className="group relative py-10">
                     <div className="grid grid-cols-12">
                         
-                        <div className="col-span-6 flex">
+                        <div className="md:col-span-6 col-span-12 flex">
                             
                             <Image src={cure} alt="Image not fonnd" className="w-16 pr-6" />
                        
-                            <h3 className="text-white font-medium text-4xl leading-[1.2]">Caring for You Caring<br/> for Lab tests</h3>
+                            <h3 className="text-white font-medium text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-[1.2]">Caring for You Caring<br/> for Lab tests</h3>
                         </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 md:col-span-6 col-span-12 pl-0 md:pl-3 lg:pl-0 pt-5 md:pt-0">
                             <ul className="list-disc pl-5">
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Your Health, Our Priority</li>
                                 <li className="text-[18px] text-[#A8A6A6] mb-1">Harmony Health</li>
                             </ul>
                         </div>
                                                 
-                            <div className="col-span-2 relative cursor-pointer">
+                            <div className="lg:col-span-2 col-span-0 relative cursor-pointer">
                                 
                             
                                 <span className="text-white"></span> 
@@ -130,7 +130,7 @@ export default function Services() {
                                 className="w-48 absolute top-0 left-0 opacity-0 pointer-events-none transition-opacity float duration-300 group-hover:opacity-100" 
                                 />
                             </div>
-                        <div className="col-span-2">
+                        <div className="lg:col-span-2 col-span-6 pt-5 lg:pt-0">
                              <CustomButton text="Contact Us"  href="/contact" variant="lime" className="pointer-events-auto" />
                         </div>
                     </div>
