@@ -84,7 +84,7 @@ export default function FooterNexus() {
                <input 
                  type="email" 
                  placeholder="Enter your e-mail" 
-                 className="bg-white md:w-3/4 rounded-4xl text-black py-1 px-4"
+                 className="bg-white w-3/4 md:w-3/4 rounded-4xl text-black py-1 px-4"
                />
                <CustomButton text="Submit"  href="/contact" variant="lime" />
              </div>
